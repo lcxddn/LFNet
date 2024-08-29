@@ -4,8 +4,8 @@ This repository is the work of "LFNet: Lightweight Network for Local-Global Feat
 ![image](https://github.com/lcxddn/LFNet/blob/main/Img/LFNet.pdf)
 ## Experimental results
 ### Table 1 Comparison of parameters and the FLOPs for each classified network.<br>
-| Models  | Lightweight  | Flops(G) | Params(M) |
-| ------------- | ------------- | ------------- | ------------- |
+| Models | Flops(G) | Params(M) |
+| ------------- | ------------- | ------------- |
 | ResNet50  | 4.13  |  25.56  |
 | ConvNeXt  | 4.46  | 27.8  |
 | SwinTransformer  | 4.37  |  28.27  |
@@ -21,3 +21,24 @@ This repository is the work of "LFNet: Lightweight Network for Local-Global Feat
 | MobileNetV3  | 0.23  |  5.48  |
 | ShuffleNetV2   | 0.59  |  7.39  |
 | LFNet(ours)  | 0.54  |  0.66  |
+
+### Table 2 The ablation study of model validity by different modules.L. represents the local feature extraction method, G. represents the global feature extraction method, and the $\rightarrow$ indicates the sequence.
+| Model  | L. $\rightarrow$ G. | G. $\rightarrow$ L. | G. | L. | Fusion | Acc(\%) |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| CGLFFNet  | |$\surd$| Content Cell  | Content Cell  | $\surd$  | 97.5  |
+| LFENet  | | | |$\surd$|$\surd$| 97.14  |
+| GLENet  | | |$\surd$| |$\surd$| 96.25  |
+| LGFNet  |$\surd$ |   |   |   |   | 96.96  |
+| LFNet  |$\surd$ |   |   |   |$\surd$ | 97.68  |
+
+### Table 3 Effectiveness of different feature extraction methods.
+| Model  | Conv-Module | Attention-Module | Acc(\%) |
+| ------------- | ------------- | ------------- | ------------- |
+| LFNet-Conv  | 2D-Conv  | LinerAttention  | 96.43  |
+| LFNet-Atte  | ADC-Conv  | Self-Attention  | 96.60  |
+| LFNet  | ADC-Conv  | LinerAttention  | 97.68  |
+
+## Visualization
+### Figure 1 Confusion matrix in the RSSCN7 dataset.
+![image](https://github.com/lcxddn/LFNet/blob/main/Img/LFNet.pdf)
+
