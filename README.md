@@ -1,7 +1,7 @@
 # LFNet
 This repository is the work of "LFNet: Lightweight Network for Local-Global Feature Fusion" based on pytorch implementation. We will continue to improve the relevant content.<br>
 ## Framework Overview
-![image](https://github.com/lcxddn/LFNet/blob/main/Img/LFNet.pdf)
+@import "https://github.com/lcxddn/LFNet/blob/main/Img/LFNet.pdf"
 ## Experimental results
 ### Table 1 Comparison of parameters and the FLOPs for each classified network.<br>
 | Models | Flops(G) | Params(M) |
@@ -40,5 +40,11 @@ This repository is the work of "LFNet: Lightweight Network for Local-Global Feat
 
 ## Visualization
 ### Figure 1 Confusion matrix in the RSSCN7 dataset.
-![image](https://github.com/lcxddn/LFNet/blob/main/Img/LFNet.pdf)
+![image](https://github.com/lcxddn/LFNet/blob/main/Img/matrix_RSSCN7.pdf)
+
+### Figure 2 Confusion matrix in the AID dataset.
+![image](https://github.com/lcxddn/LFNet/blob/main/Img/matrix_AID.jpg)
+
+### Figure 3 Heat map visualization.
+![image](https://github.com/lcxddn/LFNet/blob/main/Img/heatmap.pdf)
 
