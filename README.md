@@ -47,4 +47,6 @@ This repository is the work of "LFNet: Lightweight Network for Local-Global Feat
 
 ### Figure 3 Heat map visualization.
 ![image](https://github.com/lcxddn/LFNet/blob/main/Img/heatmap.jpg)
+Note:
+Where (a) is the original RS image with different categories. (b) is the heat map imaging of LFNet for the target category. (c) is the heat map imaging of ResNet50 for the target category. (d) is the heat map imaging of CoAtNet for the target category.
 
